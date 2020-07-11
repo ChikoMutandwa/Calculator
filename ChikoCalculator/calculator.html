@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Calculation Form</title>
+    <script src="./script.js"></script>
+</head>
+
+<body style="background-color:rgb(94, 155, 190)">
+    <h1>RB InforTech Calculator</h1>
+    <form name="calcForm">
+        <table>
+            <tr>
+                <td> <b>First <br>Number</b></td>
+                <td><input type="text" name="num1"></td>
+                <td><input type="radio" name="calc" onclick="add()" value="1" id="addition"></td>
+                <td> <b>Addition</b></td>
+            </tr>
+
+            <tr>
+                <td><b>Second <br>Number</b></td>
+                <td><input type="num2" name="num2"></td>
+                <td><input type="radio" name="calc" onclick="sub()" value="2"></td>
+                <td><b>Subtraction</b></td>
+            </tr>
+
+            <tr>
+                <td><b>Answer</b></td>
+                <td><input type="text" name="ans" style="background-color: darkgray;"></td>
+                <td><input type="radio" name="calc" onclick="multi()" value="3"></td>
+                <td> <b>Multiplication</b></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="radio" name="calc" onclick="div()" value="4"></td>
+                <td> <b>Division</b></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><br> <input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
